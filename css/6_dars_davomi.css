@@ -1,0 +1,427 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  #E5E5E5;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    /****YOZUVLAR UCHUN******/
+    font-family: monospace;
+    font-family: 'Mulish', sans-serif;/* harflarni o'zgartiradi */
+}
+
+.yozuv{
+    font-size: 48px;
+}
+
+.hero-text{
+    line-height: 32px;
+    font-weight: 300;
+    font-size: 21px;
+    
+}
+
+/*-------------------------------------------------*/
+
+
+.container{
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header{
+    width: 1240px; /* kenglik uzunligi */
+    display: flex;  /*bir qatorga joylashtiradi */
+    justify-content: space-between; /* bir qator holatda o'nga otkazadi (dispalay flexsiz ishlamaydi va width 1240px holatda!)*/
+    align-items: center; /* bitta klassdagi elementlarni bir chiziqqa tortadi */
+    margin-right: auto;/*<--- chapga olib boradi*/
+    margin-left: auto;/*o'nga olib boradi va shu ikkita amal orqali o'rtaga olib kelsa bo'ladi*/
+    margin-bottom: 80px; /*header tagiga bo'shliq ko'paytiradi*/
+}
+
+.list{
+    display: flex;
+    list-style-type: none; /* yonidagi nuqtalarni olib tashlaydi */
+}
+
+.list-item{
+    padding: 20px; /*model ichidagi padinga hajm beradi*/
+    font-size: 18px;/* kontentga hajm beradi */
+    line-height: 10px; /* tepa yoki pastga surib boradi (hajm bilan) */
+}
+
+.list-link{
+    display: inline-block; /* bir qatorga mixlaydi flexga o'xshab (chapga)*/
+    color: gray;
+    text-decoration: none;/* tagidagi chiziqni olib tashlaydi */
+}
+.left-side{
+    width: 445px;
+    text-decoration: none;
+    padding-top: 40px;
+    
+}
+
+.hero{
+    width: 1240px; 
+    display: flex;
+    justify-content: space-between;/* yonma-yon turadi */
+    align-items: center;/* X o'qi bo'yicha o'rtaga keladi */
+    margin-left: auto;/* <--| o'nga olib boradi */
+    margin-right: auto;/*chapga olib boradi, ZOOMda katta va kichik qilganda ham o'rtada turadi */
+    margin-bottom: 113px;
+}
+.for_border{
+    text-decoration: none;
+    font-size: 80px;
+}
+
+.swift{
+    text-decoration: none;
+    background-color: rgb(30, 118, 186);/* orqa fonga rang beradi */
+    border-radius: 55px;/* slindr shaklda ramka beradi */
+    padding: 50px; /*model ichidagi paddinga hajm beradi */
+    padding-top: 30px;/* tepa qismini kengaytiradi */
+    padding-left: 100px; /* chap tomonni kengaytiradi*/
+    padding-bottom: 30px; /* pastgi qismini kengaytiradi */
+    padding-right: 100px; /* o'ng tomonni kengaytiradi */
+
+    color: white;
+    line-height: 440px;/* tepa yoki pastga surib boradi (hajm bilan) */
+    font-size: 30px;
+}
+
+/*________________________________________*/
+
+.service{
+    background-image: url("./../img/dublikat.svg");/* kontent orqasiga rasm orqali dizayn bersa bo'ladi */
+    background-repeat: no-repeat;
+    /* background-size: contain;hammasini o'z ichiga oladi yani orqa fonga berilgan rasmni */
+    /* background-position: bottom;orqa fondagi rasmni tepaga surib boradi */
+    background-position: calc(50% - 530px) 200px;
+}
+
+
+
+.big-container{
+    max-width: 2100px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.service-container{
+    
+    display: flex;
+    flex-direction: column;/* bir qatordagi kontentga <<USTUN>> holatga keltiradi */
+    justify-content: center;
+    align-items: center;
+    background-image: url("./../img/orqaelement.svg");
+    background-repeat: no-repeat;
+    background-position: calc(20% + 1200px) -76px;
+
+}
+
+.service-heading{
+    font-size: 36px;
+    line-height: 56px;
+    margin: 0;
+    margin-bottom: 26px;
+}
+
+.service-divider{
+    display: inline-block;
+    width: 56px;
+    height: 2px;
+    background: #000000;
+    border-radius: 5px;
+    margin-bottom: 33px;
+}
+
+.service-text{
+    width: 952px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 67px;
+    text-align: center;/* yozuvlarni o'rtaga olib keluvchi amal */
+}
+
+.service-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; /* ekran kattalashtirliayotganda o'rash uslubi */
+    align-items: center;
+}
+
+.service-item{
+    width: 350px;
+    background-color: #FFFFFF;
+    padding: 47px 50px 47px 39px;/* "1-tepadan" */
+    margin: 11px;
+    border-radius: 20px;
+}
+
+.service-item-heading{
+    font-size: 24px;
+    line-height: 56px;
+    margin: 0;
+    margin-bottom: 1px;    
+
+}
+
+.service2{
+}
+/* 2- service uchun */
+
+
+.service-item2{
+    background-image: url("./../img/rasm.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 350px;
+    height: 512px;
+    background-color: rgb(197, 213, 212);
+    padding: 47px 50px 47px 39px;/* "1-tepadan" */
+    margin: 11px;
+    border-radius: 20px;
+    padding-top: 274px;  
+}
+
+.service-item3{
+    background-image: url("./../img/image\ 2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 350px;
+    height: 512px;
+    background-color: rgb(197, 213, 212);
+    padding: 47px 50px 47px 39px;/* "1-tepadan" */
+    margin: 11px;
+    border-radius: 20px;
+    padding-top: 274px;  
+}
+
+.service-item4{
+    background-image: url("./../img/image\ 3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 350px;
+    height: 512px;
+    background-color: rgb(197, 213, 212);
+    padding: 47px 50px 47px 39px;/* "1-tepadan" */
+    margin: 11px;
+    border-radius: 20px;
+    padding-top: 274px;  
+}
+
+/* footerborder */
+.learn-more-footer{
+    text-decoration: none;
+    border: 1.4px solid #458FF6;
+    box-sizing: border-box;
+    border-radius: 55px;
+    padding: 12px 66px 14px 65px;
+    
+}
+
+.border-for-footer{
+    margin-top: 84px;
+    margin-bottom: 213px;
+}
+
+/* for border */
+
+.border_for{
+    
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+
+.swiftt{
+    
+    height: 56px;
+    color:  #458FF6;
+    display: flex;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 51px;
+    padding-right: 51px;
+    border: 1.4px solid #458FF6;
+    border-radius: 55px;
+    align-items: center;
+    margin-bottom: 221px;
+}
+
+.learn_more{
+    height: 56px;
+    color: #458FF6;;
+    display: flex;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: 300px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 1.4px solid #458FF6;
+    border-radius: 55px;
+    align-items: center;
+
+}
+
+/* footer */
+
+.footer {
+    
+
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 109px;
+    padding-bottom: 109px;
+    padding-left: 220px;
+    padding-right: 220px;
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    
+}
+.footer-inner-left {
+    max-width: 288px;
+    width: 100%;
+}
+.footer-logo-link {
+}
+.footer-logo-img {
+}
+.footer-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+.footer-inner-one {
+    margin-bottom: 10px;
+}
+.company-footer {
+    color: #FFFFFF;
+    margin-left: 40px;
+}
+
+.footer-links-left-list {
+    list-style-type: none;
+}
+.list-link {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Edward Newgate*/
+
+.edward {
+    margin-bottom: 291px;
+}
+
+.edward-container {
+    width: 1120px;
+    height: 425px;
+    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    border-radius: 24px;
+    margin-bottom: 68px;
+    
+}
+.edward-inner-left {
+    
+}
+
+.edward-left-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 10px;
+}
+
+.edward-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 253px;
+    padding-top: 68px;
+
+    font-size: 36px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+.service-divider-edward {
+    display: inline-block;
+    width: 56px;
+    height: 2px;
+    background: black;
+    border-radius: 5px;
+    margin-bottom: 33px;
+    margin-left: 483px;
+}
+.edward-newgate-img {
+    
+    width: 141px;
+    height: 141px;
+    margin-left: 92px;
+    margin-top: 39px;
+    margin-bottom: 35px;
+}
+.edward-newgate {
+    margin: 0px 0px 105px -89px;
+}
+.edward-text-alpha {
+    margin: 0px 32px 74px -275px;
+}
+
+.edward-text-betta{
+    width: 420px;
+    height: 120px;
+    font-size: 19px;
+    line-height: 30px;
+    margin: 10px 120px 51px 10px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* strelka */
+
+.strelka {
+    width: 1600px;
+    display: flex;  /*bir qatorga joylashtiradi */
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 14px 479px 8px 473px;
+}
+.strelka-img {
+
+}
+.nuqta-img {
+
+}
+.nuqta-img-3{
+    
+}
+.vektor-strelka {
+}
+
+.nuqta{
+    width: 94px;
+    height: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+}
